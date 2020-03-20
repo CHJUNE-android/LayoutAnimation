@@ -1,4 +1,4 @@
-package com.example.animationexercise
+package com.example.animationexercise.ui
 
 import com.example.animationexercise.recycler.Poster
 

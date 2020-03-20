@@ -1,8 +1,9 @@
-package com.example.animationexercise
+package com.example.animationexercise.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
+import com.example.animationexercise.R
 import com.skydoves.transformationlayout.onTransformationStartContainer
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,16 +15,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         with(main_viewpager) {
-            adapter = MainPagerAdapter(supportFragmentManager)
+            adapter = MainPagerAdapter(
+                supportFragmentManager
+            )
             offscreenPageLimit = 3
             addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-                override fun onPageScrollStateChanged(state: Int) = kotlin.Unit
+                override fun onPageScrollStateChanged(state: Int) = Unit
                 override fun onPageScrolled(
                     position: Int,
                     positionOffset: Float,
                     positionOffsetPixels: Int
-                ) = kotlin.Unit
-
+                ) = Unit
                 override fun onPageSelected(position: Int) {
                     main_bottom_navigation.menu.getItem(position).isChecked = true
                 }

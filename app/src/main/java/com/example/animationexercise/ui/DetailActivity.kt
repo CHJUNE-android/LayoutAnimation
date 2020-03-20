@@ -1,4 +1,4 @@
-package com.example.animationexercise
+package com.example.animationexercise.ui
 
 import android.app.Activity
 import android.content.Context
@@ -6,6 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
+import com.example.animationexercise.R
 import com.example.animationexercise.recycler.Poster
 import com.skydoves.transformationlayout.TransformationLayout
 import com.skydoves.transformationlayout.onTransformationEndContainer

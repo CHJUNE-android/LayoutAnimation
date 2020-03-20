@@ -1,4 +1,4 @@
-package com.example.animationexercise
+package com.example.animationexercise.ui
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
